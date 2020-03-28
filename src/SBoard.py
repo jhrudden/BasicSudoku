@@ -18,7 +18,6 @@ class SudokuSolver:
 
 		return col
 
-
 	def get_box(self, r_index, col_index):
 		# find the 3 x 3 box this coord pair is in
 		box = []
@@ -80,11 +79,6 @@ class SudokuSolver:
 
 
 
-
-
-
-
-
 board = [[4,7,0,0,0,0,0,0,0],
 [0,6,2,5,9,0,0,3,0],
 [0,3,8,7,0,4,2,0,9],
@@ -94,7 +88,7 @@ board = [[4,7,0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0,0,0],
 [9,0,0,4,0,7,5,0,8],
 [2,0,0,0,8,0,0,9,7]]
-grid = SudokuBoard(board)
+grid = SudokuSolver(board)
 
 
 grid.solve()
